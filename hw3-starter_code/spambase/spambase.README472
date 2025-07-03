@@ -1,0 +1,22 @@
+ADDITIONAL NOTES ON THIS VERSION OF SPAMBASE
+Daniel Lowd <lowd@cs.uoregon.edu>
+February 2013 
+
+The original spambase dataset is available from the UCI machine
+learning repository here:
+  http://archive.ics.uci.edu/ml/datasets/Spambase
+
+I have modified this dataset by converting the word and character
+attributes to be 0/1 instead of real-valued frequencies.  I also
+removed the last three attributes, which are counts.  Finally, I put
+the instances in random order and split it into train and test sets.
+
+Much larger and more realistic spam datasets are available.  These
+often include the complete email and header information, so if you
+want to work with them, you'll need to decide what features to extract
+from the emails.  Subject words?  Body words?  Time of day?  Domain
+name information?  A good choice of features can make a big
+difference.
+
+Datasets available here:
+  http://csmining.org/index.php/data.html
